@@ -6,5 +6,6 @@ Homebrew tap for Bharath's utilities.
 
 ```bash
 brew tap bharath2020/tools
+brew install jaala
 brew install simproxy-beta
 ```
