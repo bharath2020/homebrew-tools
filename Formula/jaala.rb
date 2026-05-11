@@ -4,8 +4,8 @@ class Jaala < Formula
   desc "iOS Simulator network testing for contract, replay, and failure scenarios"
   homepage "https://github.com/bharath2020/jaala"
   url "https://github.com/bharath2020/jaala.git",
-      tag:      "v0.1.0",
-      revision: "264207fa6042d7f270ea00e9fdc363436689fd71"
+      tag:      "v0.2.0",
+      revision: "fd779f9fc36ceccb8738ac6da017e01b1ba5307a"
   license "MIT"
   head "https://github.com/bharath2020/jaala.git", branch: "main"
 
@@ -25,6 +25,6 @@ class Jaala < Formula
   end
 
   test do
-    assert_match "jaala 0.1.0", shell_output("#{bin}/jaala --version")
+    assert_match "jaala 0.2.0", shell_output("#{bin}/jaala --version")
   end
 end
