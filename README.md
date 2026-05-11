@@ -14,8 +14,9 @@ Or install manually:
 
 ```bash
 brew tap bharath2020/tools
-brew install jaala
+brew install bharath2020/tools/jaala
 brew install --cask mitmproxy
+brew install cameroncooke/axe/axe
 ```
 
 Other tools:
