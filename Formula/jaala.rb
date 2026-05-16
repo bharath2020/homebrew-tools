@@ -3,9 +3,8 @@ class Jaala < Formula
 
   desc "iOS Simulator network testing for contract, replay, and failure scenarios"
   homepage "https://github.com/bharath2020/jaala"
-  url "https://github.com/bharath2020/jaala.git",
-      tag:      "v0.2.0",
-      revision: "fd779f9fc36ceccb8738ac6da017e01b1ba5307a"
+  url "https://raw.githubusercontent.com/bharath2020/homebrew-tools/main/dist/jaala-0.2.0.tar.gz"
+  sha256 "800679df8af0a1ade3c130b3ea584d73d7f616907b0cc1d863e4ce4a05a797c2"
   license "MIT"
   head "https://github.com/bharath2020/jaala.git", branch: "main"
 
