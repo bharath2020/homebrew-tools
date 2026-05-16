@@ -18,10 +18,12 @@ class Jaala < Formula
 
   def caveats
     <<~EOS
-      jaala requires mitmdump at runtime and AXe for the bundled validation scripts.
+      jaala requires mitmdump at runtime and AXe for bundled validation scripts.
 
-      Install mitmproxy with:
+      The install-jaala.sh script installs those tools automatically. If you installed
+      this formula directly, also run:
         brew install --cask mitmproxy
+        brew install cameroncooke/axe/axe
     EOS
   end
 

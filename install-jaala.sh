@@ -8,18 +8,20 @@ fi
 
 brew tap bharath2020/tools
 
-if brew list --formula jaala >/dev/null 2>&1; then
-  brew upgrade bharath2020/tools/jaala || true
-else
-  brew install bharath2020/tools/jaala
-fi
-
 if ! command -v mitmdump >/dev/null 2>&1; then
+  echo "Installing mitmproxy for mitmdump..."
   brew install --cask mitmproxy
 fi
 
 if ! command -v axe >/dev/null 2>&1; then
+  echo "Installing AXe for validation scripts..."
   brew install cameroncooke/axe/axe
+fi
+
+if brew list --formula jaala >/dev/null 2>&1; then
+  brew upgrade bharath2020/tools/jaala || true
+else
+  brew install bharath2020/tools/jaala
 fi
 
 echo
