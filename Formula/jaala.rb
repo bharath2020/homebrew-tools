@@ -9,10 +9,12 @@ class Jaala < Formula
   license "MIT"
   head "https://github.com/bharath2020/jaala.git", branch: "main"
 
+  depends_on "python-setuptools"
   depends_on "python@3.13"
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3.13")
+    venv.pip_install_and_link buildpath, build_isolation: false
   end
 
   def caveats
