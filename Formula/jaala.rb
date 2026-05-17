@@ -3,8 +3,8 @@ class Jaala < Formula
 
   desc "iOS Simulator network testing for contract, replay, and failure scenarios"
   homepage "https://github.com/bharath2020/jaala"
-  url "file://#{__dir__}/../dist/jaala-0.2.4.tar.gz"
-  sha256 "c42e528c46c25a4188356d3f68f4bf3ba9591cfbf93ff6621719387bdf9af1a0"
+  url "file://#{__dir__}/../dist/jaala-0.2.5.tar.gz"
+  sha256 "6a5a2d2479cf95726742864a5fd88f65dcfaa530f3554044d00f6b410450c17b"
   license "MIT"
   head "https://github.com/bharath2020/jaala.git", branch: "main"
 
@@ -28,6 +28,6 @@ class Jaala < Formula
   end
 
   test do
-    assert_match "jaala 0.2.4", shell_output("#{bin}/jaala --version")
+    assert_match "jaala 0.2.5", shell_output("#{bin}/jaala --version")
   end
 end
