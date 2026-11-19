@@ -19,6 +19,14 @@ brew install --cask mitmproxy
 brew install cameroncooke/axe/axe
 ```
 
+adf-auth (macOS 14+, builds from source with Xcode):
+
+```bash
+brew tap bharath2020/tools
+brew trust --formula bharath2020/tools/adf-auth
+brew install bharath2020/tools/adf-auth
+```
+
 Other tools:
 
 ```bash
